@@ -1,9 +1,12 @@
 h1 {
-    color:cadetblue
-
+    color:cadetblue;
 }
 
 body {
-    background-color:burlywood
+    background-color:burlywood;
 
+}
+
+table {
+    border: 10px;
 }
