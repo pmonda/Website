@@ -21,7 +21,7 @@ h1 {
 
 body {
     background-image: url("bigsur1920.jpg");
-    background-size: auto;
+    background-repeat: no-repeat;
     /* animation: fadeBackground 3s;
     animation-direction: alternate;
     animation-iteration-count: infinite; */
