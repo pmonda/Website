@@ -89,6 +89,10 @@ td {
     }
 }
 
+::-webkit-scrollbar {
+    width:10em;
+}
+
 @keyframes typing {
     from {
         width: 0
