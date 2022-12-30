@@ -2,13 +2,17 @@
 <html>
 
 <head>
+    <script src="app.js">
+
+    </script>
     <div class="navbar">
-        <a class="active" href="index.html">Home</a> 
+        <a class="active" href="index.html">Home</a>
         <a href="about.html">About</a>
-      </div>
+    </div>
 </head>
 
 <body>
+    <script src="app.js"></script>
     <div class="bg"></div>
     <link rel="stylesheet" href="app.css" />
     <h1> C:\> Pranesh Monda</h1>
@@ -28,8 +32,31 @@
     <script async src="https://api.countapi.xyz/hit/praneshm.netlify.app/b65773d9-af92-401e-ad22-c1430592e581?callback=websiteVisits"></script>
     <h2>This site has been visited <span id="visits"></span> times.</h1>
 
-</body>
 
-<script src="app.js"></script>
+        <div class="calculator-grid">
+            <div class="output">
+              <div data-previous-operand class="previous-operand"></div>
+              <div data-current-operand class="current-operand"></div>
+            </div>
+            <button data-all-clear class="span-two">AC</button>
+            <button data-delete>DEL</button>
+            <button data-operation>÷</button>
+            <button data-number>1</button>
+            <button data-number>2</button>
+            <button data-number>3</button>
+            <button data-operation>*</button>
+            <button data-number>4</button>
+            <button data-number>5</button>
+            <button data-number>6</button>
+            <button data-operation>+</button>
+            <button data-number>7</button>
+            <button data-number>8</button>
+            <button data-number>9</button>
+            <button data-operation>-</button>
+            <button data-number>.</button>
+            <button data-number>0</button>
+            <button data-equals class="span-two">=</button>
+          </div>
+</body>
 
 </html>

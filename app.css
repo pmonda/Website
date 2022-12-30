@@ -20,6 +20,7 @@ h1 {
 }
 
 body {
+    /* background-color: salmon; */
     background-image: url("bigsur1920.jpg");
     background-repeat: no-repeat;
     /* animation: fadeBackground 3s;
@@ -29,7 +30,6 @@ body {
     font-size:x-large;
     color: black;
     font-weight: 400;
-    display: inline-block;
     margin: 0%;
 
 }
@@ -39,6 +39,7 @@ table {
     font-weight: 500;
     font-size: 20px;
     font-family:'Courier New', Courier, monospace;
+    padding: 40px;
 }
 
 td {
@@ -68,6 +69,53 @@ td {
     background-color:rgb(57, 116, 226);
 }
 
+.calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+  }
+  
+  .calculator-grid > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(255, 255, 255, .75);
+  }
+  
+  .calculator-grid > button:hover {
+    background-color: rgba(255, 255, 255, .9);
+  }
+  
+  .span-two {
+    grid-column: span 2;
+  }
+  
+  .output {
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, .75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  
+  .output .previous-operand {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+  }
+  
+  .output .current-operand {
+    color: white;
+    font-size: 2.5rem;
+  }
+
 
 @keyframes fadeIn {
     0% {
@@ -90,7 +138,19 @@ td {
 }
 
 ::-webkit-scrollbar {
-    width:10em;
+    width:0.8em;
+}
+
+::-webkit-scrollbar-track {
+    background: linear-gradient(gray, rgb(192, 192, 192));
+
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(red,blue);
+    border-radius: 100vw;
+
 }
 
 @keyframes typing {
@@ -111,7 +171,7 @@ td {
     }
 
     50% {
-        border-color: #39ff14;
+        border-color: black;
     }
 }@font-face {
     font-family: 'San Francisco';
