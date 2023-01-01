@@ -1,6 +1,7 @@
 
 h1, h2 {
     overflow: hidden;
+    background: radial-gradient(lightblue, lightgreen);
     background-color:blanchedalmond;
     /* Ensures the content is not revealed until the animation */
     border-right: .15em solid white;
