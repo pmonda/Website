@@ -1,5 +1,5 @@
 
-h1 {
+h1, h2 {
     overflow: hidden;
     background-color:blanchedalmond;
     /* Ensures the content is not revealed until the animation */
@@ -114,6 +114,12 @@ td {
   .output .current-operand {
     color: white;
     font-size: 2.5rem;
+  }
+
+  .paragraph {
+    background-image: url('notebookpaper.jpg');
+    font-family: sans-serif;
+    padding: 40px;
   }
 
 
