@@ -1,0 +1,39 @@
+* {
+    font-family:'GothicRounded', sans-serif;
+    
+}
+
+body {
+    background-image: url('trainstationbg.jpg');
+    background-size: cover;
+
+}
+.box, .about {
+    background: linear-gradient(white,rgba(255, 255, 255, 0.678));
+    margin: auto;
+    margin-top: 100px;
+    width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    align-content: center;
+    text-align: center;
+}
+.box > button {
+    background:green;
+    font-size:20px;
+    color:white;
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(white,rgba(255, 255, 255, 0.678));
+    border-radius:10px;
+    padding: 20px;
+}
+
+.box > button:hover {
+    background: rgba(0,128,0,0.75);
+}
+
+@font-face {
+    font-family: 'GothicRounded';
+    src: url('GothamRounded.ttf')
+}

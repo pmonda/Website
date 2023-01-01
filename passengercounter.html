@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passenger Counter App</title>
+    <link rel="stylesheet" href="passengerstyle.css"/>
+</head>
+
+<body>
+    <div class="bg-image"></div>
+    <script src="script.js"></script>
+    <div class="box">
+        <h1>Passenger Counter</h1>
+        <p>Number of passengers: </p><p id="numCurrent">0</p>
+        <button onClick="incrementNumPassengers()">INCREMENT</button>
+        <button onClick="decrement()">DECREMENT</button>
+        <button onClick="save()">SAVE</button>
+        <button onclick="reset()">RESET</button>
+        <button onClick="log()">LOG</button>
+        <button onClick="sum()">TOTAL</button>
+        <p>Previous number of passengers: </p>
+        <p id="saved"></p>
+        <p>Log of Passengers</p>
+        <p id="prevNumIndx"></p>
+        <p>Total Number of Passengers Today:</p>
+        <p id="sum">0</p>
+    </div>
+
+    <div class="about">
+        <p>About this app: This app is designed to allow an observer at one particular train station to count the number of 
+            passengers that arrive. The save button can be used after a train passes, to save the amount of foot traffic in
+        the station before each passing train. In a day, the total number of passengers can provide foot traffic metrics via
+        the observer.</p>
+    </div>
+</body>
+</html>
