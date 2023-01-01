@@ -1,50 +1,27 @@
-var passengers = 0;
-const passengersPrev =[passengers];
-function incrementNumPassengers() {
-    passengers = passengers + 1;
-    if(passengers > 10) {
-        alert("maximum number of passengers for station reached");
-        passengers = 10;
-    }
-    document.getElementById("numCurrent").innerText = passengers;
-}
+const items = [''];
 
-function decrement() {
-    passengers = passengers -1;
-    if(passengers < 0) {
-        alert("invalid input");
-        passengers = 0;
-    }
-    document.getElementById("numCurrent").innerText=passengers;
-}
-
-function reset() {
-    passengers = 0;
-    document.getElementById("numCurrent").innerText = 0;
-    document.getElementById("saved").innerHTML = "";
-}
-z
-function save() {
-    var saved = passengers;
-    document.getElementById("saved").innerText = saved;
-    passengersPrev.push(saved);
-}
-
-function log() {
+function addItem() {
+    var listInput = document.getElementById("listInput").value;
     var outputHTML = "";
-    for(var i = 1; i < passengersPrev.length; i++) {
-        outputHTML += passengersPrev[i] + ", ";
+    
+    if ( /* !items.includes(listInput) && */ listInput != "") {
+        items.push(listInput);
+        for (var i = 1; i < items.length; i++) {
+            outputHTML += items[i] + "<br>";
+        }
     }
-    document.getElementById("prevNumIndx").innerHTML = outputHTML;
+    document.getElementById("listInput").value = "";
+    document.getElementById("listItem").innerHTML = outputHTML;
+
+}
+function clearItems() {
+    document.getElementById("listItem").innerHTML = "";
+    items.length = 0;
+    addItem();
 }
 
-function sum() {
-    var outputHTML = "";
-    var total = 0;
-    for(var i = 1; i < passengersPrev.length; i++) {
-        total+=passengersPrev[i];
-    }
-
-    outputHTML += total;
-    document.getElementById("sum").innerHTML = outputHTML;
-}
+// function checkOff() {
+//     const index = items.indexOf(document.getElementById("listItem").value);
+//     alert("removing " + document.getElementById("listItem").innerText);
+//     items.splice(index, 1);
+// }
